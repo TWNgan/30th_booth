@@ -1,0 +1,31 @@
+{
+  "name": "thirtieth-booth",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Gesture-controlled anniversary quiz booth \u2014 answer with your hands.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "test": "node --experimental-strip-types scripts/classifier-test.ts",
+    "typecheck": "tsc --noEmit",
+    "kiosk": "node scripts/kiosk.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test:ui": "node scripts/ui-smoke.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "canvas-confetti": "^1.9.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.kiosk-profile/
+.DS_Store
+*.local
+tsconfig.tsbuildinfo
